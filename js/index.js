@@ -5,7 +5,7 @@ let nombre = prompt ( 'Hola! Mi nombre es Luca, ¿Cuál es el tuyo?' )
 
 
 if (!nombre && nombre == '') {
-    alert('Para continuar debes cargar tu nombre!')
+   alert('Para continuar debes cargar tu nombre!')
 }
 
 else {
@@ -20,8 +20,23 @@ if (edad <= 18) {
 }
 else {
     alert('¡Felicitaciones!, Tenes ' + edad + ' años, podes entrar en este sitio')
+ }
+
+
+
+function crearUsuario( email, nombre, edad ) {
+
+
+    const nuevoUsuario = {
+        email,
+        nombre,
+        edad,
+    }
+
+console.log( 'Se creo el usuario: ' + JSON.stringify(nuevoUsuario))
+
 }
 
+const email = prompt('Por favor, para generar tu usuario debes ingresar una email válido')
 
-
-
+crearUsuario ( email, nombre, edad )
