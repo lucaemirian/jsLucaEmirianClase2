@@ -6,9 +6,7 @@ function Usuario(nombre, edad, mail) {
     this.mail = mail;
 }
 
-    registro() {
-        console.log('¡Bienvenido' this.nombre', tu registro fue exitoso!')
-}
+   
 
 
 const usuario1 = new Usuario('Luca', 25, 'lucaemirian@gmail.com')
@@ -32,6 +30,14 @@ console.log ( usuario4 )
 const values = Object.values (usuario3)
 console.log(values)
 
+class Registro {
+
+    constructor(nombre, edad, mail) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.mail = mail;
+    }
+}
 
 
 
