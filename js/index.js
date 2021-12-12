@@ -21,10 +21,25 @@ else {
  }
 
 
+<<<<<<< HEAD
+=======
+
+function crearUsuario( email, nombre, edad ) {
+>>>>>>> 942db1958fe104ad4ce4077d6f1844602d43000f
 
 function crearUsuario( email, nombre, edad ) {
 
+    const nuevoUsuario = {
+        email,
+        nombre,
+        edad,
+    }
 
+console.log( 'Se creo el usuario: ' + JSON.stringify(nuevoUsuario))
+
+}
+
+<<<<<<< HEAD
     const nuevoUsuario = {
         email,
         nombre,
@@ -38,3 +53,8 @@ console.log( 'Se creo el usuario: ' + JSON.stringify(nuevoUsuario))
 const email = prompt('Por favor, para generar tu usuario debes ingresar una email válido')
 
 crearUsuario ( email, nombre, edad )
+=======
+const email = prompt('Por favor, para generar tu usuario debes ingresar una email válido')
+
+crearUsuario ( email, nombre, edad )
+>>>>>>> 942db1958fe104ad4ce4077d6f1844602d43000f
