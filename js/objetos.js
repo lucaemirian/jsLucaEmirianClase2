@@ -40,7 +40,25 @@ class Registro {
 }
 
 
+function crearUsuario( email, nombre, servicio ) {
 
+    function crearUsuario( email, nombre, servicio ) {
+        const nuevoUsuario = {
+            email,
+            nombre,
+            servicio,
+        }
+    
+    console.log( 'Se creo el usuario: ' + JSON.stringify(nuevoUsuario))
+    
+    }
+    
+    //let mail = prompt('Por favor, para generar tu solicitud debes ingresar una email válido')
+    
+    crearUsuario ( email, nombre, servicio )
+    }
+    
+    
 
 
 

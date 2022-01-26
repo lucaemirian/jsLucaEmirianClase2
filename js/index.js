@@ -1,4 +1,4 @@
-let pedirNombre = prompt ( 'Hola! Mi nombre es Luca, ¿Cuál es el tuyo?' )
+let nombre = prompt ( 'Hola! Mi nombre es Luca, ¿Cuál es el tuyo?' )
 
 
 
@@ -11,50 +11,30 @@ else {
 }
 
 
-let pedirEdad = prompt ( '¿Podrías indicarme cuantos años tenes?')
+let servicio = prompt ( '¿Podrías indicarme en que servicio estas interesado?')
 
-if (edad <= 18) {
-    alert('Para continuar debes pedirle permiso a tus padres')
+if (servicio <= 'remoto') {
+    alert('Para continuar debes comunicarte por whatsapp, a continuación verá los valores')
 }
 else {
-    alert('¡Felicitaciones!, Tenes ' + edad + ' años, podes entrar en este sitio')
+    alert('Por favor comunicate por telefono, a continuación verá los valores')
  }
 
+const servicios = [ {id: 1, servicio: "Formateo de PC", valor: "$2800"},
+                    {id: 2, servicio: "Limpieza de virus", valor: "$1500"},
+                    {id: 3, servicio: "Instalacion de software", valor: "$2800"},
+                    {id: 4, servicio: "Upgrade de Hardware", valor: "$2800"},
+]
 
-<<<<<<< HEAD
-=======
 
-function crearUsuario( email, nombre, edad ) {
->>>>>>> 942db1958fe104ad4ce4077d6f1844602d43000f
+let servicio = document.getElementsByClassName ("service");
+console.log(service[1].innerHTML);
+console.log(service[2].innerHTML);
+console.log(service[3].innerHTML);
+console.log(service[4].innerHTML);
 
-function crearUsuario( email, nombre, edad ) {
 
-    const nuevoUsuario = {
-        email,
-        nombre,
-        edad,
-    }
+    
 
-console.log( 'Se creo el usuario: ' + JSON.stringify(nuevoUsuario))
 
-}
 
-<<<<<<< HEAD
-    const nuevoUsuario = {
-        email,
-        nombre,
-        edad,
-    }
-
-console.log( 'Se creo el usuario: ' + JSON.stringify(nuevoUsuario))
-
-}
-
-const email = prompt('Por favor, para generar tu usuario debes ingresar una email válido')
-
-crearUsuario ( email, nombre, edad )
-=======
-const email = prompt('Por favor, para generar tu usuario debes ingresar una email válido')
-
-crearUsuario ( email, nombre, edad )
->>>>>>> 942db1958fe104ad4ce4077d6f1844602d43000f
